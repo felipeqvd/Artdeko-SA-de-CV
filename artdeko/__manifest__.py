@@ -1,41 +1,35 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Artdeko",
+    'name': "artdeko",
 
     'summary': """
-        Modificaciones requeridas para la operación de ARTDEKO""",
+        Short (1 phrase/line) summary of the module's purpose, used as
+        subtitle on modules listing or apps.openerp.com""",
 
     'description': """
-        La instalación de este módulo realiza los siguientes cambios:
-            -Modificación de pdf de cotización
-            -Modificación de pdf de orden de compra
-            -Modificación de pdf de factura
+        Long description of module's purpose
     """,
 
-    'author': "Exion SAS",
-    'website': "http://www.exion.com.co",
+    'author': "My Company",
+    'website': "http://www.yourcompany.com",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/master/odoo/addons/base/module/module_data.xml
     # for the full list
-    'category': 'Personalización',
+    'category': 'Uncategorized',
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base', 'product', 'sale'],
+    'depends': ['base'],
 
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
-        'report/artdeko_report.xml',
-        'report/artdeko_report_templates.xml',
-        'report/artdeko_report_layouts.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
         'demo/demo.xml',
     ],
-    'installable': True,  
 }
